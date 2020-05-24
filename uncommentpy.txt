@@ -1,0 +1,7 @@
+remove comments from python code using sed
+
+remove #
+sed -i 's/#.*$//g' fileame.py
+
+remove empty lines
+sed -i '/^$/d' fileame.py

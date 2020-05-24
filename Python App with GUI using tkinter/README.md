@@ -10,3 +10,6 @@
 * can write Label().grid()
 * Button(), takes parameters, root, text, state, padx, pady
 * function on click, when calling function don't forget to not put the parenthesis -> (command = myClick) is correct not myClick()
+* Entry(), takes parameters, root,width , height, bg, fg, borderwidth
+* get() takes whatever you Enter
+* insert(), puts default text in entry bpx

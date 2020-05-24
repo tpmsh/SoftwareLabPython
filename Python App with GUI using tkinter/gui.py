@@ -2,7 +2,7 @@ from tkinter import *
 
 root = Tk()
 
-e = Entry(root, width = 10, bg = 'Red', fg = 'blue')
+e = Entry(root,width = 30)
 e.pack()
 e.insert(0,"Enter Your Name")
 
@@ -11,7 +11,7 @@ def myClick():
     myLabel = Label(root,text = hello)
     myLabel.pack()
 
-myButton = Button(root,text = "Enter your Name", command = myClick, fg = "Red", bg = "yellow")
+myButton = Button(root,text = "Enter your Name", command = myClick)
 myButton.pack()
 
 root.mainloop()

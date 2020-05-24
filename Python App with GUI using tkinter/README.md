@@ -13,3 +13,5 @@
 * Entry(), takes parameters, root,width , height, bg, fg, borderwidth
 * get() takes whatever you Enter
 * insert(), puts default text in entry bpx
+### Building a simple calculator app
+      ... coming soon...

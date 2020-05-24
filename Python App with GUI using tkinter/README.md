@@ -8,3 +8,5 @@
 ### pack() didn't give too much control
 * grid(), takes 2 parameters, row and column and are relative
 * can write Label().grid()
+* Button(), takes parameters, root, text, state, padx, pady
+* function on click, when calling function don't forget to not put the parenthesis -> (command = myClick) is correct not myClick()

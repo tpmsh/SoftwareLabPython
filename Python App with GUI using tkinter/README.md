@@ -15,3 +15,5 @@
 * insert(), puts default text in entry bpx
 ### Building a simple calculator app
       ... coming soon...
+
+#### Side note: I'm learning python myself, so i may occasionally make some programming mistakes! Bear with me! :')

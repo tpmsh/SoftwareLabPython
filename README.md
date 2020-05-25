@@ -6,3 +6,4 @@
 * Fibonacci Series
 * Leap Year
 * Check Prime
+Side note: I'm learning python myself, so i may occasionally make some programming mistakes! Bear with me! :')

@@ -7,20 +7,22 @@ class List:
     def __init__(self):
         self.head = None
 
-n1 = List()
+    def insertBeg(self, data):
+        newNode = Node(data)
+        if self.head is None:
+            self.head = newNode
+        else:
+            newNode.link = self.head
+            self.head = newNode
 
-n2 = Node(5)
+    def traverse(self):
+        temp = self.head
+        while temp is not None:
+            print(temp.data, end = ', ')
+            temp = temp.link
 
-n3 = Node(7)
-
-n1.head = n2
-
-n2.link = n3
-
-print(n2.data, n2.link, n3.data, n3.link)
-
-temp = n1.head
-
-while temp is not None:
-    print(temp.data, end = ", ")
-    temp = temp.link
+l = List()
+l.insertBeg(5)
+l.insertBeg(7)
+l.insertBeg(9)
+l.traverse()

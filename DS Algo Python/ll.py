@@ -1,73 +1,26 @@
 class Node:
+    def __init__(self, data):
+        self.data = data
+        self.link = None
 
-	def __init__(self, data):
-		self.data = data
-		self.next = None
-class LinkedList:
+class List:
+    def __init__(self):
+        self.head = None
 
-	def __init__(self):
-		self.head = None
+n1 = List()
 
-	def push(self, new_data):
+n2 = Node(5)
 
+n3 = Node(7)
 
-		new_node = Node(new_data)
+n1.head = n2
 
-		new_node.next = self.head
+n2.link = n3
 
-		self.head = new_node
+print(n2.data, n2.link, n3.data, n3.link)
 
+temp = n1.head
 
-
-	def insertAfter(self, prev_node, new_data):
-
-		if prev_node is None:
-			print ("The given previous node must inLinkedList.")
-			return
-
-
-		new_node = Node(new_data)
-
-		new_node.next = prev_node.next
-
-		prev_node.next = new_node
-
-
-
-	def append(self, new_data):
-
-
-
-		new_node = Node(new_data)
-
-
-		if self.head is None:
-			self.head = new_node
-			return
-
-		last = self.head
-		while (last.next):
-			last = last.next
-
-		last.next = new_node
-
-	def printList(self):
-		temp = self.head
-		while (temp):
-			print (temp.data, end = ', ')
-			temp = temp.next
-if __name__=='__main__':
-
-	llist = LinkedList()
-
-	llist.append(6)
-
-	llist.push(7);
-
-	llist.push(1);
-
-	llist.append(4)
-
-	llist.insertAfter(llist.head.next, 8)
-	print ('Created linked list is:',
-	llist.printList())
+while temp is not None:
+    print(temp.data, end = ", ")
+    temp = temp.link

@@ -15,6 +15,16 @@ class List:
             newNode.link = self.head
             self.head = newNode
 
+    def insertEnd(self. data):
+        newNode = Node(data)
+        if self.head = None:
+            self.head = newNode
+        else:
+            temp = self.head
+            while temp is not None:
+                temp = temp.link
+            temp.link = newNode
+
     def traverse(self):
         temp = self.head
         while temp is not None:
@@ -25,4 +35,9 @@ l = List()
 l.insertBeg(5)
 l.insertBeg(7)
 l.insertBeg(9)
+
+l.insertEnd(15)
+l.insertEnd(17)
+l.insertEnd(19)
+
 l.traverse()

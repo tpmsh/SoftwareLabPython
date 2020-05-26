@@ -15,13 +15,13 @@ class List:
             newNode.link = self.head
             self.head = newNode
 
-    def insertEnd(self. data):
+    def insertEnd(self, data):
         newNode = Node(data)
-        if self.head = None:
+        if self.head is None:
             self.head = newNode
         else:
             temp = self.head
-            while temp is not None:
+            while temp.link is not None:
                 temp = temp.link
             temp.link = newNode
 
